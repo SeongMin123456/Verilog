@@ -1,0 +1,54 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "tcf-debug",
+			"request": "launch",
+			"name": "Zynq_axi_seg_app_hw_1",
+			"debugType": "baremetal-zynq",
+			"attachToRunningTargetOptions": {
+				"targetSetupMode": "standalone",
+				"executeScript": true,
+				"scriptPath": ""
+			},
+			"autoAttachProcessChildren": false,
+			"target": {
+				"targetConnectionId": "Local",
+				"peersIniPath": "../../../.peers.ini",
+				"context": "zynq"
+			},
+			"targetSetup": {
+				"resetSystem": true,
+				"programDevice": true,
+				"resetAPU": false,
+				"bitstreamFile": "C:\\verilog_lab\\zynq_axi_7segment\\zynq_axi_7segment.runs\\impl_1\\zynq_axi_segment_wrapper.bit",
+				"zynqInitialization": {
+					"isFsbl": false,
+					"usingFSBL": {
+						"initWithFSBL": true,
+						"fsblFile": "${workspaceFolder}\\Zynq_axi_7segment\\export\\Zynq_axi_7segment\\sw\\boot\\fsbl.elf",
+						"fsblExitSymbol": "FsblHandoffJtagExit"
+					},
+					"usingPs7Init": {
+						"runPs7Init": true,
+						"runPs7PostInit": true,
+						"ps7InitTclFile": "${workspaceFolder}\\Zynq_axi_seg\\_ide\\psinit\\ps7_init.tcl"
+					}
+				},
+				"downloadElf": [
+					{
+						"core": "ps7_cortexa9_0",
+						"resetProcessor": true,
+						"elfFile": "${workspaceFolder}\\Zynq_axi_seg\\build\\Zynq_axi_seg.elf",
+						"stopAtEntry": false
+					}
+				],
+				"crossTriggerBreakpoints": {
+					"isSelected": false,
+					"breakpoints": []
+				}
+			},
+			"internalConsoleOptions": "openOnSessionStart"
+		}
+	]
+}

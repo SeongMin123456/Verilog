@@ -1,0 +1,7 @@
+set_property SRC_FILE_INFO {cfile:C:/verilog_lab/my_1sec/my_1sec.srcs/constrs_1/new/my_1sec.xdc rfile:../../../my_1sec.srcs/constrs_1/new/my_1sec.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN D20 [get_ports rst]
+set_property src_info {type:XDC file:1 line:5 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN L14 [get_ports LED]
+set_property src_info {type:XDC file:1 line:6 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN H16 [get_ports clk]

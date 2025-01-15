@@ -1,0 +1,19 @@
+Exception at PC 0x00007FF9B12C75B0
+Attemped to write at address 0x0000000000000000
+Printing stacktrace...
+
+[0] (xsi_trace_all+0x17ee0) [0x00007FF9B12C75B0]
+[1] (xsi_trace_all+0x17ee0) [0x00007FF9B12C75B0]
+[2] (iki_spushz+0x910) [0x00007FF9B12C9830]
+[3] (iki_vlog_schedule_transaction_non_blocking_delay_signal+0x3a) [0x00007FF9B11AF2FA]
+[4]  [0x0000000000402557]
+[5] (xsi_trace_all+0x104c4) [0x00007FF9B12BFB94]
+[6]  [0x00000000004034A2]
+[7] (xsi_trace_all+0x141ea) [0x00007FF9B12C38BA]
+[8] (xsi_trace_all+0xb14f) [0x00007FF9B12BA81F]
+[9] (xsi_trace_all+0x9cec) [0x00007FF9B12B93BC]
+[10] (xsi_trace_all+0x9859) [0x00007FF9B12B8F29]
+[11] (recalloc+0xa3) [0x00007FFA59C09333]
+[12] (BaseThreadInitThunk+0x1d) [0x00007FFA5B71257D]
+[13] (RtlUserThreadStart+0x28) [0x00007FFA5C6AAF28]
+Done

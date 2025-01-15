@@ -1,0 +1,7 @@
+Running: xsim.dir/mt_srs_tb_behav/xsimk.exe -simmode gui -wdb mt_srs_tb_behav.wdb -simrunnum 0 -socket 50174
+Design successfully loaded
+Design Loading Memory Usage: 8060 KB (Peak: 8060 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 8776 KB (Peak: 8776 KB)
+Simulation CPU Usage: 0 ms

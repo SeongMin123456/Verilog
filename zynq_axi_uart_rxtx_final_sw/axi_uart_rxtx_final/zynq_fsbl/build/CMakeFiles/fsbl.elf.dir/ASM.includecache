@@ -1,0 +1,10 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/verilog_lab/zynq_axi_uart_rxtx_final_sw/axi_uart_rxtx_final/zynq_fsbl/fsbl_handoff.S
+

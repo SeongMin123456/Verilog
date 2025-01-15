@@ -1,0 +1,27 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_15 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot myip_v1_0_tb_behav xil_defaultlib.myip_v1_0_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=2,C_AX...
+Compiling module axi_vip_v1_1_15.axi_vip_v1_1_15_top(C_AXI_PROTOC...
+Compiling module xil_defaultlib.myip_v1_0_bfm_1_master_0_0
+Compiling module xil_defaultlib.myip_v1_0_S00_AXI_default
+Compiling module xil_defaultlib.myip_v1_0
+Compiling module xil_defaultlib.myip_v1_0_bfm_1_myip_0_0
+Compiling module xil_defaultlib.myip_v1_0_bfm_1
+Compiling module xil_defaultlib.myip_v1_0_bfm_1_wrapper
+Compiling module xil_defaultlib.myip_v1_0_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot myip_v1_0_tb_behav

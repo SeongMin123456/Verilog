@@ -1,0 +1,7 @@
+set_property PACKAGE_PIN D20 [get_ports A]
+set_property PACKAGE_PIN D19 [get_ports B]
+set_property PACKAGE_PIN L15 [get_ports R]
+set_property DRIVE 12 [get_ports R]
+set_property IOSTANDARD LVCMOS33 [get_ports B]
+set_property IOSTANDARD LVCMOS33 [get_ports A]
+set_property IOSTANDARD LVCMOS33 [get_ports R]

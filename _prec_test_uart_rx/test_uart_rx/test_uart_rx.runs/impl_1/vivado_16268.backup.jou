@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Wed Nov 20 01:33:19 2024
+# Process ID: 16268
+# Current directory: C:/Users/PARKSEONGMIN/source/repos/Verilog/Verilog Test Project/test_uart_rx/test_uart_rx.runs/impl_1
+# Command line: vivado.exe -log uart_rx.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source uart_rx.tcl -notrace
+# Log file: C:/Users/PARKSEONGMIN/source/repos/Verilog/Verilog Test Project/test_uart_rx/test_uart_rx.runs/impl_1/uart_rx.vdi
+# Journal file: C:/Users/PARKSEONGMIN/source/repos/Verilog/Verilog Test Project/test_uart_rx/test_uart_rx.runs/impl_1\vivado.jou
+# Running On        :DESKTOP-865S85T
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :19045
+# Processor Detail  :AMD Ryzen 7 7730U with Radeon Graphics         
+# CPU Frequency     :1996 MHz
+# CPU Physical cores:8
+# CPU Logical cores :16
+# Host memory       :16475 MB
+# Swap memory       :2550 MB
+# Total Virtual     :19025 MB
+# Available Virtual :8529 MB
+#-----------------------------------------------------------
+source uart_rx.tcl -notrace

@@ -1,0 +1,7 @@
+Running: xsim.dir/my_serdes_tb_func_synth/xsimk.exe -simmode gui -wdb my_serdes_tb_func_synth.wdb -simrunnum 0 -socket 52157
+Design successfully loaded
+Design Loading Memory Usage: 8788 KB (Peak: 8788 KB)
+Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 23270000 KB (Peak: 23270000 KB)
+Simulation CPU Usage: 7374 ms

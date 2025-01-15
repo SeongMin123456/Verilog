@@ -1,0 +1,10 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/verilog_lab/my_stopwatch/my_stopwatch.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sim_1/new/my_stopwatch_tb.v,1731303349,verilog,,,,my_stopwatch_tb,,,,,,,,
+C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/imports/practice/seg_tick.v,1731304529,verilog,,C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sim_1/new/my_stopwatch_tb.v,,seg_tick,,,,,,,,
+C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/imports/verilog_lab/disp_stopwatch.v,1731293359,verilog,,C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/new/my_stopwatch.v,,disp_mod,,,,,,,,
+C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/new/my_stopwatch.v,1731304042,verilog,,C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/new/my_stopwatch_top.v,,my_stopwatch,,,,,,,,
+C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/new/my_stopwatch_top.v,1731301571,verilog,,C:/verilog_lab/my_stopwatch/my_stopwatch.srcs/sources_1/imports/practice/seg_tick.v,,my_stopwatch_top,,,,,,,,
