@@ -1,0 +1,286 @@
+
+*** Running vivado
+    with args -log SPI_Master.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source SPI_Master.tcl
+
+
+ECHO가 설정되어 있지 않습니다.
+ECHO가 설정되어 있지 않습니다.
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source SPI_Master.tcl -notrace
+Command: synth_design -top SPI_Master -part xc7z007sclg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z007s'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1836
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 917.293 ; gain = 444.730
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6901] identifier 'curr_state' is used before its declaration [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:39]
+WARNING: [Synth 8-6901] identifier 'IDLE' is used before its declaration [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:39]
+INFO: [Synth 8-6157] synthesizing module 'SPI_Master' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:71]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:102]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:145]
+INFO: [Synth 8-6155] done synthesizing module 'SPI_Master' (0#1) [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.488 ; gain = 552.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.488 ; gain = 552.926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z007sclg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.488 ; gain = 552.926
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z007sclg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'curr_state_reg' in module 'SPI_Master'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_sequential_next_state_reg' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:73]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                           000001 |                              000
+                 W_START |                           000010 |                              001
+                  W_DONE |                           000100 |                              010
+                 R_START |                           001000 |                              011
+                  R_LOAD |                           010000 |                              100
+                  R_DONE |                           100000 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'curr_state_reg' using encoding 'one-hot' in module 'SPI_Master'
+WARNING: [Synth 8-327] inferring latch for variable 'FSM_onehot_next_state_reg' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:73]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1025.488 ; gain = 552.926
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input   17 Bit        Muxes := 2     
+	   6 Input    8 Bit        Muxes := 2     
+	   6 Input    6 Bit        Muxes := 1     
+	   2 Input    6 Bit        Muxes := 7     
+	   6 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 6     
+	   6 Input    1 Bit        Muxes := 6     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 66 (col length:40)
+BRAMs: 100 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.531 ; gain = 743.969
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1216.531 ; gain = 743.969
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[16] with 1st driver pin 'MOSI_data_reg[16]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[16] with 2nd driver pin 'MOSI_data_reg[16]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[15] with 1st driver pin 'MOSI_data_reg[15]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[15] with 2nd driver pin 'MOSI_data_reg[15]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[14] with 1st driver pin 'MOSI_data_reg[14]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[14] with 2nd driver pin 'MOSI_data_reg[14]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[13] with 1st driver pin 'MOSI_data_reg[13]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[13] with 2nd driver pin 'MOSI_data_reg[13]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[12] with 1st driver pin 'MOSI_data_reg[12]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[12] with 2nd driver pin 'MOSI_data_reg[12]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[11] with 1st driver pin 'MOSI_data_reg[11]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[11] with 2nd driver pin 'MOSI_data_reg[11]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[10] with 1st driver pin 'MOSI_data_reg[10]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[10] with 2nd driver pin 'MOSI_data_reg[10]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[9] with 1st driver pin 'MOSI_data_reg[9]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[9] with 2nd driver pin 'MOSI_data_reg[9]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[8] with 1st driver pin 'MOSI_data_reg[8]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[8] with 2nd driver pin 'MOSI_data_reg[8]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[7] with 1st driver pin 'MOSI_data_reg[7]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[7] with 2nd driver pin 'MOSI_data_reg[7]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[6] with 1st driver pin 'MOSI_data_reg[6]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[6] with 2nd driver pin 'MOSI_data_reg[6]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[5] with 1st driver pin 'MOSI_data_reg[5]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[5] with 2nd driver pin 'MOSI_data_reg[5]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[4] with 1st driver pin 'MOSI_data_reg[4]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[4] with 2nd driver pin 'MOSI_data_reg[4]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[3] with 1st driver pin 'MOSI_data_reg[3]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[3] with 2nd driver pin 'MOSI_data_reg[3]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[2] with 1st driver pin 'MOSI_data_reg[2]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[2] with 2nd driver pin 'MOSI_data_reg[2]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[1] with 1st driver pin 'MOSI_data_reg[1]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[1] with 2nd driver pin 'MOSI_data_reg[1]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[0] with 1st driver pin 'MOSI_data_reg[0]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:147]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin MOSI_data[0] with 2nd driver pin 'MOSI_data_reg[0]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:105]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[7] with 1st driver pin 'R_data_reg[7]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[7] with 2nd driver pin 'R_data_reg[7]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[6] with 1st driver pin 'R_data_reg[6]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[6] with 2nd driver pin 'R_data_reg[6]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[5] with 1st driver pin 'R_data_reg[5]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[5] with 2nd driver pin 'R_data_reg[5]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[4] with 1st driver pin 'R_data_reg[4]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[4] with 2nd driver pin 'R_data_reg[4]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[3] with 1st driver pin 'R_data_reg[3]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[3] with 2nd driver pin 'R_data_reg[3]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[2] with 1st driver pin 'R_data_reg[2]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[2] with 2nd driver pin 'R_data_reg[2]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[1] with 1st driver pin 'R_data_reg[1]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[1] with 2nd driver pin 'R_data_reg[1]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[0] with 1st driver pin 'R_data_reg[0]__0/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:112]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin R_data[0] with 2nd driver pin 'R_data_reg[0]/Q' [C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.srcs/sources_1/new/SPI_Master.v:153]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       25|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |     8|
+|4     |LUT3 |     6|
+|5     |LUT4 |    10|
+|6     |LUT5 |     6|
+|7     |LUT6 |     7|
+|8     |FDRE |    74|
+|9     |FDSE |     1|
+|10    |LD   |     6|
+|11    |IBUF |    20|
+|12    |OBUF |    11|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   151|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 50 critical warnings and 6 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:03 ; elapsed = 00:00:11 . Memory (MB): peak = 1220.516 ; gain = 747.953
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1223.363 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1322.609 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 6 instances were transformed.
+  LD => LDCE: 6 instances
+
+지정된 경로를 찾을 수 없습니다.
+Synth Design complete | Checksum: 4978277f
+INFO: [Common 17-83] Releasing license: Synthesis
+19 Infos, 6 Warnings, 50 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1322.609 ; gain = 852.977
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1322.609 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/verilog_lab/SPI_PJT/SPI_Master/SPI_Master.runs/synth_1/SPI_Master.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file SPI_Master_utilization_synth.rpt -pb SPI_Master_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb  3 16:12:15 2025...
