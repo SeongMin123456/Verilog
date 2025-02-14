@@ -60,9 +60,13 @@ initial begin
     #200
     mosi <= 1'b0;
     csn <= 1'b0;
-    #200
+    #100
     mosi <= 1'b1;
-    #300
+    #100
+    mosi <= 1'b0;
+    #100
+    mosi <= 1'b1;
+    #100
     RAM_rdata <= 8'b10101010;
     #500
     csn <= 1'b0;

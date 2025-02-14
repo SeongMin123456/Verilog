@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="AXI_SPI_block_processing_system7_0_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_processing_system7_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_AXI_SPI_0_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_AXI_SPI_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_rst_ps7_0_50M_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_rst_ps7_0_50M_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_auto_pc_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_SPI_Slave_0_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_SPI_Slave_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_SPI_Master_0_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_SPI_Master_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="AXI_SPI_block_SPI_RAM_0_0_synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/AXI_SPI_block_SPI_RAM_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/verilog_lab/SPI_PJT/AXI_SPI/AXI_SPI.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="AXI_SPI_block_processing_system7_0_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_AXI_SPI_0_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_rst_ps7_0_50M_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_auto_pc_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_SPI_Slave_0_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_SPI_Master_0_0_synth_1"/>
+		<Parent Id="AXI_SPI_block_SPI_RAM_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+		<Parameter Name="general.shortenLongPath" Val="true" Type="bool"/>
+	</Parameters>
+	<ProductInfo Name="vivado"/>
+</Runs>
+

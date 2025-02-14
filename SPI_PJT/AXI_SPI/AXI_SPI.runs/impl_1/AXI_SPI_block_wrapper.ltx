@@ -1,0 +1,997 @@
+{
+    "ltx_root": {
+        "version": 4,
+        "minor": 0,
+        "ltx_data": [
+            {
+                "name": "EDA_PROBESET",
+                "active": true,
+                "debug_cores": [
+                    {
+                        "type": "XSDB_V3",
+                        "name": "dbg_hub",
+                        "spec": "labtools_xsdbm_v3",
+                        "clk_input_freq_hz": "100000000"
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 0,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 0,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 1,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_Wdata[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 2,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/next_state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/next_state[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/next_state[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/next_state[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 2,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[2]",
+                                                "parentNetId": 18
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[1]",
+                                                "parentNetId": 19
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[0]",
+                                                "parentNetId": 20
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/RD_Data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 1,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/WR_CMD",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/WR_CMD[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/WR_CMD[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 7,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_data[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 6,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/Write_Addr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[31]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[30]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[29]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[28]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[27]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[26]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[25]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[24]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[23]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[22]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[21]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[20]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[19]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[18]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[17]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[16]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[15]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[14]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[13]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[12]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[11]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[10]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[9]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[8]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg3[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe9",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 9,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[31]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[30]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[29]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[28]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[27]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[26]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[25]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[24]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[23]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[22]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[21]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[20]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[19]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[18]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[17]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[16]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[15]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[14]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[13]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[12]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[11]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[10]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[9]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[8]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[31]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[30]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[29]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[28]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[27]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[26]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[25]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[24]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[23]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[22]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[21]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[20]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[19]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[18]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[17]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[16]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[15]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[14]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[13]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[12]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[11]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[10]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[9]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[8]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg2[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 31,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[31]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[30]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[29]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[28]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[27]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[26]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[25]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[24]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[23]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[22]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[21]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[20]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[19]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[18]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[17]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[16]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[15]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[14]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[13]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[12]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[11]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[10]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[9]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[8]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[7]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[6]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[5]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[4]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[3]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[2]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[1]"
+                                            },
+                                            {
+                                                "name": "AXI_SPI_block_i/AXI_SPI_0/inst/slv_reg0[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe12",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 12,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/AXI_SPI_0/inst/CSN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe13",
+                                "id": 13,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 13,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Slave_0/inst/MISO",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe14",
+                                "id": 14,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 14,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/MOSI",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe15",
+                                "id": 15,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 15,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Slave_0/inst/RAM_WEN",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe16",
+                                "id": 16,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 16,
+                                "nets": [
+                                    {
+                                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/SCLK",
+                                        "isBus": false,
+                                        "parentNetId": 170
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 18,
+                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[2]",
+                        "state_reg": [
+                            {
+                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "W_START",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "W_DONE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "R_START",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "R_LOAD",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "R_DONE",
+                                        "val": "111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 19,
+                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[1]",
+                        "state_reg": [
+                            {
+                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "W_START",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "W_DONE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "R_START",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "R_LOAD",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "R_DONE",
+                                        "val": "111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state[0]",
+                        "state_reg": [
+                            {
+                                "name": "AXI_SPI_block_i/SPI_Master_0/inst/curr_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000"
+                                    },
+                                    {
+                                        "name": "W_START",
+                                        "val": "001"
+                                    },
+                                    {
+                                        "name": "W_DONE",
+                                        "val": "010"
+                                    },
+                                    {
+                                        "name": "R_START",
+                                        "val": "011"
+                                    },
+                                    {
+                                        "name": "R_LOAD",
+                                        "val": "100"
+                                    },
+                                    {
+                                        "name": "R_DONE",
+                                        "val": "111"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 170,
+                        "name": "AXI_SPI_block_i/SPI_Master_0/inst/SCLK",
+                        "state_reg": [
+                            {
+                                "name": "AXI_SPI_block_i/SPI_Slave_0/inst/FSM_onehot_curr_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "W_START",
+                                        "val": "000010"
+                                    },
+                                    {
+                                        "name": "W_DONE",
+                                        "val": "000100"
+                                    },
+                                    {
+                                        "name": "R_START",
+                                        "val": "001000"
+                                    },
+                                    {
+                                        "name": "R_LOAD",
+                                        "val": "010000"
+                                    },
+                                    {
+                                        "name": "R_DONE",
+                                        "val": "100000"
+                                    },
+                                    {
+                                        "name": "IDLE",
+                                        "val": "000001"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

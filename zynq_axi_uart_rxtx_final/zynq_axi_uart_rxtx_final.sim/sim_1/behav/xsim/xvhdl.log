@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_rst_ps7_0_100M_0/sim/axi_uart_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_uart_rst_ps7_0_100M_0'

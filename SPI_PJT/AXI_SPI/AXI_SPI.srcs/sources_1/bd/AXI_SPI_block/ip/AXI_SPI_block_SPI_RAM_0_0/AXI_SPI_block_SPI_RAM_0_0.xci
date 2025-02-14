@@ -1,0 +1,47 @@
+{
+  "schema": "xilinx.com:schema:json_instance:1.0",
+  "ip_inst": {
+    "xci_name": "AXI_SPI_block_SPI_RAM_0_0",
+    "cell_name": "SPI_RAM_0",
+    "component_reference": "xilinx.com:module_ref:SPI_RAM:1.0",
+    "ip_revision": "1",
+    "gen_directory": "../../../../../../AXI_SPI.gen/sources_1/bd/AXI_SPI_block/ip/AXI_SPI_block_SPI_RAM_0_0",
+    "parameters": {
+      "component_parameters": {
+        "Component_Name": [ { "value": "AXI_SPI_block_SPI_RAM_0_0", "resolve_type": "user", "usage": "all" } ]
+      },
+      "project_parameters": {
+        "ARCHITECTURE": [ { "value": "zynq" } ],
+        "BASE_BOARD_PART": [ { "value": "digilentinc.com:cora-z7-07s:part0:1.1" } ],
+        "BOARD_CONNECTIONS": [ { "value": "" } ],
+        "DEVICE": [ { "value": "xc7z007s" } ],
+        "PACKAGE": [ { "value": "clg400" } ],
+        "PREFHDL": [ { "value": "VERILOG" } ],
+        "SILICON_REVISION": [ { "value": "" } ],
+        "SIMULATOR_LANGUAGE": [ { "value": "MIXED" } ],
+        "SPEEDGRADE": [ { "value": "-1" } ],
+        "STATIC_POWER": [ { "value": "" } ],
+        "TEMPERATURE_GRADE": [ { "value": "" } ]
+      },
+      "runtime_parameters": {
+        "IPCONTEXT": [ { "value": "IP_Integrator" } ],
+        "IPREVISION": [ { "value": "1" } ],
+        "MANAGED": [ { "value": "TRUE" } ],
+        "OUTPUTDIR": [ { "value": "../../../../../../AXI_SPI.gen/sources_1/bd/AXI_SPI_block/ip/AXI_SPI_block_SPI_RAM_0_0" } ],
+        "SELECTEDSIMMODEL": [ { "value": "" } ],
+        "SHAREDDIR": [ { "value": "../../ipshared" } ],
+        "SWVERSION": [ { "value": "2023.2" } ],
+        "SYNTHESISFLOW": [ { "value": "OOC_HIERARCHICAL" } ]
+      }
+    },
+    "boundary": {
+      "ports": {
+        "SCLK": [ { "direction": "in" } ],
+        "ADDR": [ { "direction": "in", "size_left": "6", "size_right": "0" } ],
+        "DIN": [ { "direction": "in", "size_left": "7", "size_right": "0" } ],
+        "WEN": [ { "direction": "in" } ],
+        "DOUT": [ { "direction": "out", "size_left": "7", "size_right": "0" } ]
+      }
+    }
+  }
+}

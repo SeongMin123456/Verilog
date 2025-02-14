@@ -1,0 +1,19 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		AXI_SPI_0: AXI_SPI@40000000 {
+			xlnx,rable = <0>;
+			compatible = "xlnx,AXI-SPI-1.0";
+			status = "okay";
+			clock-names = "S_AXI_ACLK";
+			xlnx,ip-name = "AXI_SPI";
+			xlnx,edk-iptype = "PERIPHERAL";
+			reg = <0x40000000 0x1000>;
+			clocks = <&clkc 15>;
+			xlnx,name = "AXI_SPI_0";
+		};
+	};
+};

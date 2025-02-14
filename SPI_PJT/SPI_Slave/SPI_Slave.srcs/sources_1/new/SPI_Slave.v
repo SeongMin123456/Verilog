@@ -47,12 +47,13 @@ always @(posedge SCLK) begin
 end
 
 reg [15:0] in_data = 16'd0;   // Read From Master, Trasfer to RAM
+reg temp = 1'd0;              // MOSI Capture bit
 reg [4:0] data_cnt;           // in_data counter
 reg [3:0] MISO_cnt = 4'd0;    // MISO output counter
-//reg mode = 1'b0;              // 1 = Write Mode, 0 = Read Mode
-wire mode = (!CSN && !data_cnt) ? MOSI : 0;
+reg R_start_done = 1'b0;        // R_LOAD Trigger
+wire mode = (!CSN && !data_cnt) ? MOSI : 0;     // 1 : write Mode, 0 : Read Mode
 
-always @(curr_state, next_state, mode, CSN, RAM_WEN, data_cnt, MISO_cnt) begin
+always @(curr_state, next_state, mode, CSN, RAM_WEN, R_start_done, data_cnt, MISO_cnt) begin
     case(curr_state)
         IDLE : begin
             if(mode && (!CSN))            next_state <= W_START;
@@ -60,7 +61,7 @@ always @(curr_state, next_state, mode, CSN, RAM_WEN, data_cnt, MISO_cnt) begin
             else                          next_state <= IDLE;
         end
         W_START : begin
-            if(data_cnt == 16)            next_state <= W_DONE;
+            if(data_cnt == 17)            next_state <= W_DONE;
             else                          next_state <= W_START;
         end
         W_DONE : begin
@@ -68,7 +69,7 @@ always @(curr_state, next_state, mode, CSN, RAM_WEN, data_cnt, MISO_cnt) begin
             else                          next_state <= W_DONE;
         end
         R_START : begin
-            if(data_cnt == 8)             next_state <= R_LOAD;
+            if(R_start_done)              next_state <= R_LOAD;
             else                          next_state <= R_START;
         end
         R_LOAD : begin
@@ -86,51 +87,39 @@ end
 always @(posedge SCLK) begin
     case(curr_state)
         IDLE : begin
+            temp <= 1'b0;
+            RAM_Addr <= 7'd0;
+            RAM_Wdata <= 8'd0;
+            RAM_WEN <= 1'b0;
             MISO_cnt <= 4'd0;
-            MISO <= 1'b0;
-//            /*if(!CSN)    mode <= MOSI;
-//            else    begin*/   // initialization
-//                data_cnt <= 5'd0;
-//                in_data <= 16'd0;
-//                MISO_cnt <= 4'd0;
-//                RAM_Addr <= 7'd0;
-//                RAM_Wdata <= 8'd0;
-//                RAM_WEN <= 1'b0;
-////            end
         end
         W_START : begin
-            in_data[0] <= MOSI;
-            //data_cnt <= data_cnt + 1;
+            temp <= MOSI;
         end
-//        W_DONE : begin
-//            if(CSN) begin
-//                RAM_Addr[6:0] <= in_data[15:9];
-//                RAM_Wdata[7:0] <= in_data[8:1];
-//                RAM_WEN <= in_data[0];
-//            end
-//        end
-        R_START : begin
-            if(data_cnt <= 7)   begin
-                in_data[0] <= MOSI;
-//                data_cnt <= data_cnt + 1;
+        W_DONE : begin
+            if(CSN) begin
+                RAM_Addr[6:0] <= in_data[15:9];
+                RAM_Wdata[7:0] <= in_data[8:1];
+                RAM_WEN <= in_data[0];
             end else begin
-                RAM_Addr[6:0] <= in_data[6:0];
-//                data_cnt <= data_cnt + 1;
+                RAM_Addr <= 7'd0;
+                RAM_Wdata <= 8'd0;
+                RAM_WEN <= 1'b0;
             end
         end
-        R_LOAD : begin
-            if(MISO_cnt < 8) begin
-                MISO <= RAM_Rdata[7 - MISO_cnt];
-                MISO_cnt <= MISO_cnt + 1;
-            end else
-                MISO <= MISO;
+        R_START : begin
+            if(data_cnt < 8)    temp <= MOSI;
+            else                RAM_Addr[6:0] <= in_data[6:0];
         end
-//        R_DONE : begin
-        
-//        end
-    endcase 
+        R_LOAD : begin  // MUX
+            MISO <= RAM_Rdata[7 - MISO_cnt];
+            MISO_cnt <= MISO_cnt + 1;
+        end
+        R_DONE : begin
+            MISO <= MISO;
+        end
+    endcase
 end
-
 
 // SLCK Falling Edge
 always @(negedge SCLK) begin
@@ -138,34 +127,24 @@ always @(negedge SCLK) begin
         IDLE : begin
             data_cnt <= 5'd0;
             in_data <= 16'd0;
-            RAM_Addr <= 7'd0;
-            RAM_Wdata <= 8'd0;
-            RAM_WEN <= 1'b0;
-//            MISO <= 1'b0;
-//            MISO_cnt <= 4'd0;
+            R_start_done <= 1'b0;
         end
         W_START : begin
-            if(data_cnt == 16)  in_data <= in_data;
-            else    begin
-                in_data <= (in_data << 1);
+            if(data_cnt < 17)   begin
+                in_data <= {in_data[14:0], temp};
                 data_cnt <= data_cnt + 1;
             end
         end
-        W_DONE : begin
-            if(CSN) begin
-                RAM_Addr[6:0] <= in_data[15:9];
-                RAM_Wdata[7:0] <= in_data[8:1];
-                RAM_WEN <= in_data[0];
-            end
-        end
+//        W_DONE : begin
+            
+            
+//        end
         R_START : begin
-            if(data_cnt >= 7)   begin
-                in_data <= in_data;
+            if(data_cnt < 8) begin
+                in_data <= {in_data[14:0], temp};
                 data_cnt <= data_cnt + 1;
-            end else    begin
-                in_data <= (in_data << 1);
-                data_cnt <= data_cnt + 1;
-            end
+                R_start_done <= 1'b0;
+            end else    R_start_done <= 1'b1;
         end
 //        R_LOAD : begin   // MUX
 //            if(MISO_cnt < 8)    MISO_cnt <= MISO_cnt + 1;

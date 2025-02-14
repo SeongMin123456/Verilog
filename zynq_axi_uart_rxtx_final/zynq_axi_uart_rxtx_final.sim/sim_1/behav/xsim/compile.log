@@ -1,0 +1,47 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.srcs/sources_1/new/axi_slave.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_slve
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.srcs/sources_1/new/uart_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module my_uart_tx
+WARNING: [VRFC 10-3380] identifier 'idle' is used before its declaration [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.srcs/sources_1/new/uart_tx.v:44]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.srcs/sources_1/new/uart_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module uart_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_processing_system7_0_0/sim/axi_uart_processing_system7_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_processing_system7_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_axi_slve_0_0/sim/axi_uart_axi_slve_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_axi_slve_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_my_uart_tx_0_0/sim/axi_uart_my_uart_tx_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_my_uart_tx_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_uart_rx_0_0/sim/axi_uart_uart_rx_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_uart_rx_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_auto_pc_0/sim/axi_uart_auto_pc_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_auto_pc_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_0/sim/bd_327a_ila_lib_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_ila_lib_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/bd_327a_g_inst_0_gigantic_mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_g_inst_0_gigantic_mux
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_g_inst_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_2/sim/bd_327a_slot_0_aw_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_slot_0_aw_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_3/sim/bd_327a_slot_0_w_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_slot_0_w_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_4/sim/bd_327a_slot_0_b_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_slot_0_b_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_5/sim/bd_327a_slot_0_ar_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_slot_0_ar_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_6/sim/bd_327a_slot_0_r_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a_slot_0_r_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/sim/bd_327a.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module bd_327a
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/sim/axi_uart_system_ila_0_0.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_system_ila_0_0
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/sim/axi_uart.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart
+INFO: [VRFC 10-311] analyzing module axi_uart_ps7_0_axi_periph_0
+INFO: [VRFC 10-311] analyzing module s00_couplers_imp_Y07TKI
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/hdl/axi_uart_wrapper.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module axi_uart_wrapper
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_rst_ps7_0_100M_0/sim/axi_uart_rst_ps7_0_100M_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'axi_uart_rst_ps7_0_100M_0'

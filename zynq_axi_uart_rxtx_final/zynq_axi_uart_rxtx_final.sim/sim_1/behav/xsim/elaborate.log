@@ -1,0 +1,235 @@
+Vivado Simulator v2023.2
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2023.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_15 -L processing_system7_vip_v1_0_17 -L generic_baseblocks_v2_1_1 -L fifo_generator_v13_2_9 -L axi_data_fifo_v2_1_28 -L axi_register_slice_v2_1_29 -L axi_protocol_converter_v2_1_29 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_14 -L gigantic_mux -L xlconcat_v2_1_5 -L uvm -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot axi_uart_wrapper_behav xil_defaultlib.axi_uart_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_gp.v:208]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5546]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:5564]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 64 for port 'WR_DATA_STRB' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_gp.v:292]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:80]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:89]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10256]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10274]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10275]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:165]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:174]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:251]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:260]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'WR_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:337]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 9 for port 'RD_BYTES' [/scratch/proj/xbuilds/SWIP/2023.2_1013_2256/infra/XSIM/lin/.cxl.ip/incl/processing_system7_vip_v1_0_17_axi_hp.v:346]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_bid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7157]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 3 for port 'm_axi_rid' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7175]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 64 for port 'm_axi_rdata' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7176]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_awid' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2246]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_0_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2252]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_bid' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2261]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_arid' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2265]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_0_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2270]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_rid' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2275]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_1_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2296]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_1_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2314]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_2_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2340]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_2_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2358]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_3_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2384]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_3_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2402]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_4_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2428]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_4_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2446]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_5_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2472]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_5_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2490]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_6_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2516]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_6_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2534]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_7_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2560]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_7_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2578]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_8_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2604]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_8_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2622]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_9_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2648]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axi_wstrb' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2653]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_9_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2666]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axis_tstrb' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2680]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 4 for port 'slot_9_axis_tkeep' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2681]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_10_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2692]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_10_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2710]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_11_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2736]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_11_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2754]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_12_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2780]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_12_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2798]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_13_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2824]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_13_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2842]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_14_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2868]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_14_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2886]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_15_axi_awcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2912]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 4 for port 'slot_15_axi_arcache' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:2930]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'sel' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3830]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_awuser' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3831]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_wuser' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3832]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_buser' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3833]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_aruser' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3834]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_ruser' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:3835]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 2 for port 'slot_0_axi_wid' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_system_ila_0_0/bd_0/ip/ip_1/sim/bd_327a_g_inst_0.v:4012]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/sim/axi_uart.v:315]
+WARNING: [VRFC 10-5021] port 'ENET0_GMII_RXD' is not connected on this instance [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.ip_user_files/bd/axi_uart/ip/axi_uart_processing_system7_0_0/sim/axi_uart_processing_system7_0_0.v:191]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp0' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4372]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp0' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4373]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ocm_gp1' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4394]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_gp1' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4395]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp0' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4465]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp1' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4483]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp2' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4501]
+WARNING: [VRFC 10-3129] assignment to input 'wr_dv_ddr_hp3' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:4519]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1253]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1276]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_wr_qos' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1091]
+WARNING: [VRFC 10-3129] assignment to input 'ddr_rd_qos' [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:1115]
+WARNING: [VRFC 10-3027] 'ocm_wr_strb_port0' was previously declared with a different range [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:3809]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4855]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:5110]
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module xil_defaultlib.axi_slve_default
+Compiling module xil_defaultlib.axi_uart_axi_slve_0_0
+Compiling module xil_defaultlib.my_uart_tx
+Compiling module xil_defaultlib.axi_uart_my_uart_tx_0_0
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_g...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_g...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_f...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_s...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_i...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_s...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_d...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_o...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_o...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_r...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_r...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_15.axi_vip_v1_1_15_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(WDATA_WIDTH=32,RD...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_15.axi_vip_v1_1_15_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 64 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:6134]
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_15.axi_vip_v1_1_15_top(C_AXI_PROTOC...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_i...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:10898]
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module xilinx_vip.axi_vip_axi4pc(PROTOCOL=1,RID_WI...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_PROTOCOL=1,C_AX...
+Compiling module axi_vip_v1_1_15.axi_vip_v1_1_15_top(C_AXI_PROTOC...
+WARNING: [VRFC 10-3705] select index 128 into 'wrp_strb' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7772]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:7985]
+WARNING: [VRFC 10-3705] select index 4 into 'ar_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8124]
+WARNING: [VRFC 10-3705] select index 4 into 'wr_rresp_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8221]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8240]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8381]
+WARNING: [VRFC 10-3705] select index 4 into 'rresp_time_cnt' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8386]
+WARNING: [VRFC 10-3705] select index 4 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/ci/prod/2023.2/sw/continuous/3079/packages/customer/vivado/data/ip/xilinx/processing_system7_vip_v1_0/hdl/processing_system7_vip_v1_0_vl_rfs.sv:8391]
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17_a...
+Compiling module processing_system7_vip_v1_0_17.processing_system7_vip_v1_0_17(C...
+Compiling module xil_defaultlib.axi_uart_processing_system7_0_0
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axi_r...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axic_...
+Compiling module axi_register_slice_v2_1_29.axi_register_slice_v2_1_29_axi_r...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_b...
+Compiling module axi_protocol_converter_v2_1_29.axi_protocol_converter_v2_1_29_a...
+Compiling module xil_defaultlib.axi_uart_auto_pc_0
+Compiling module xil_defaultlib.s00_couplers_imp_Y07TKI
+Compiling module xil_defaultlib.axi_uart_ps7_0_axi_periph_0
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_14.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_14.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_14.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_14.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture axi_uart_rst_ps7_0_100m_0_arch of entity xil_defaultlib.axi_uart_rst_ps7_0_100M_0 [axi_uart_rst_ps7_0_100m_0_defaul...]
+Compiling module xil_defaultlib.bd_327a_g_inst_0_gigantic_mux(C_...
+Compiling module xil_defaultlib.bd_327a_g_inst_0
+Compiling module xil_defaultlib.bd_327a_ila_lib_0
+Compiling module xlconcat_v2_1_5.xlconcat_v2_1_5_xlconcat_default
+Compiling module xil_defaultlib.bd_327a_slot_0_ar_0
+Compiling module xil_defaultlib.bd_327a_slot_0_aw_0
+Compiling module xil_defaultlib.bd_327a_slot_0_b_0
+Compiling module xil_defaultlib.bd_327a_slot_0_r_0
+Compiling module xil_defaultlib.bd_327a_slot_0_w_0
+Compiling module xil_defaultlib.bd_327a
+Compiling module xil_defaultlib.axi_uart_system_ila_0_0
+Compiling module xil_defaultlib.uart_rx(overrate=54)
+Compiling module xil_defaultlib.axi_uart_uart_rx_0_0
+Compiling module xil_defaultlib.axi_uart
+Compiling module xil_defaultlib.axi_uart_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot axi_uart_wrapper_behav

@@ -55,11 +55,10 @@ always @(posedge CLK) begin
     end else begin
         if(cnt == (overrate - 1)) begin
             cnt <= 10'd0;
-            sampling <= sampling + 1;                       // overrate
+            sampling <= sampling + 1;         // overrate
             if(sampling == 15)  baud_cnt <= baud_cnt + 1;
         end else begin
             cnt <= cnt + 1;
-            /*if(sampling == 15) sampling <= 4'd0;*/
         end
      end
 end
@@ -72,7 +71,6 @@ reg send_done = 1'b0;       // start bit + data_bit finish
 reg [7:0] rx_data = 8'd0;   // rx data
 reg [3:0] data_cnt = 4'd0;  // data count
 reg shift_done = 1'b0;      // shift sequence end
-(* MARK_DEBUG="true" *)
 wire rx_done;
 assign rx_done = (baud_cnt == 10) ? 1: 0;
 
@@ -107,8 +105,6 @@ always @(posedge CLK) begin
             end else    shift_done <=0;
         end
     end
-   /* stop : begin
-    end*/
     endcase
 end
 

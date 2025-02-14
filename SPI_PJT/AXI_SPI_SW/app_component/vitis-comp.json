@@ -1,0 +1,18 @@
+{
+  "name": "app_component",
+  "type": "HOST",
+  "platform": "c:\\verilog_lab\\SPI_PJT\\AXI_SPI_SW\\zynq_SPI_plat\\export\\zynq_SPI_plat\\zynq_SPI_plat.xpfm",
+  "domain": "standalone_ps7_cortexa9_0",
+  "cpuInstance": "ps7_cortexa9_0",
+  "cpuType": "cortex-a9",
+  "os": "standalone",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": []
+  },
+  "domainRealName": "standalone_ps7_cortexa9_0",
+  "applicationFlow": "EMBEDDED",
+  "previousBuildStatusMap": {
+    "hw": "SUCCESS"
+  }
+}
