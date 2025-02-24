@@ -19,17 +19,11 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
 module digital_test(
-    input rst,  // active low
-    input clk,
-    input din,
-    output reg qout
+    input [3:0] a,
+    output [7:0] y
     );
 
-always @(negedge rst, posedge clk) begin
-    if(!rst)    qout <= 0;
-    else        qout <= din;
-end
+assign y = a * 10;
 
 endmodule

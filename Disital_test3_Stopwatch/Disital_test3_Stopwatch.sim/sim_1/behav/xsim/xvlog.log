@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/Disital_test3_Stopwatch/Disital_test3_Stopwatch.srcs/sources_1/new/Stopwatch_10cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stopwatch_10cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/Disital_test3_Stopwatch/Disital_test3_Stopwatch.srcs/sources_1/new/Stopwatch_cnt.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Stopwatch_cnt
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/verilog_lab/Disital_test3_Stopwatch/Disital_test3_Stopwatch.srcs/sim_1/new/stopwatch_counter_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module stopwatch_counter_tb
