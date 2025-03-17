@@ -125,7 +125,7 @@ int main(void) {
         else // UART RX
         {
             uart_rx_data = *(ptr+3);
-            xil_printf("\n\r Received Data from RX %x\n\r",uart_rx_data);            
+            xil_printf("\n\r Received Data from RX %c\n\r",uart_rx_data);            
 
             uart_rx_status = 0;
             *(ptr+2) = 0;

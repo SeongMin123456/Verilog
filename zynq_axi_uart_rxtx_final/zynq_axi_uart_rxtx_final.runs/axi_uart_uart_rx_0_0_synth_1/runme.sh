@@ -25,7 +25,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/verilog_lab/zynq_axi_uart_rxtx/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/axi_uart_uart_rx_0_0_synth_1'
+HD_PWD='C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/axi_uart_uart_rx_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

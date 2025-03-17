@@ -2006,10 +2006,10 @@
           "rst_ps7_0_100M/slowest_sync_clk",
           "ps7_0_axi_periph/M00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "uart_rx_0/CLK",
           "system_ila_0/clk",
           "axi_slve_0/S_AXI_ACLK",
-          "my_uart_tx_0/CLK"
+          "my_uart_tx_0/CLK",
+          "uart_rx_0/CLK"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2024,10 +2024,10 @@
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN",
-          "uart_rx_0/RST",
           "system_ila_0/resetn",
           "axi_slve_0/S_AXI_ARESETN",
-          "my_uart_tx_0/RST"
+          "my_uart_tx_0/RST",
+          "uart_rx_0/RST"
         ]
       },
       "rxd_0_1": {

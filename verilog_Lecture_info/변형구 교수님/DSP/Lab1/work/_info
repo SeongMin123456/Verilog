@@ -1,0 +1,58 @@
+m255
+o
+cModel Technology
+dG:\A_PJT\ETRI\2021_상반기\DSP\강의자료_실습\Lab File\Lab1
+vaddr_gen
+IYX5Y9`MlSYhF4LdX@QN@z0
+V]kzMIH2:6XaQ9zEREO]f52
+w1572265532
+Faddr_gen.v
+L0 1
+OE;L;5.5f;17
+r1
+31
+vsine_a
+IFBI>aKAde1SRHD[:XkNhM0
+VbR_0z><QaiND1]NFDSAHc2
+w1572402137
+Fsine_a.v
+L0 1
+OE;L;5.5f;17
+r1
+31
+vsine_gen
+IV0c<;hToLngng40:]IW_Y0
+V[c:7c21O2SQCmZJW4H6Y?2
+w1572402602
+Fsine_gen.v
+L0 1
+OE;L;5.5f;17
+r1
+31
+vsine_sub_unsigned
+IP_e:^7?]U??5em?kdG@hV3
+VOD@5QG:20l;lHW585f=>b2
+w1618885615
+Fsine_sub_unsigned.v
+L0 1
+OE;L;5.5f;17
+r1
+31
+vsine_sum_unsigned
+IabT<PGK<W`G3<3WM[@zZ?1
+V9PM>L[kYf4cTVDb6eB>HI3
+w1618885289
+Fsine_sum_unsigned.v
+L0 1
+OE;L;5.5f;17
+r1
+31
+vusin_rom
+IPNDeB1;AC6g<dPYe@BC:h3
+VP3NRdb:zF8QzQ=oY8EI073
+w1572395746
+Fusin_rom.v
+L0 1
+OE;L;5.5f;17
+r1
+31

@@ -3,8 +3,8 @@
 # SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
 # IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
 # SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
-# Start of session at: Mon Jan 13 13:36:32 2025
-# Process ID: 23504
+# Start of session at: Mon Feb 17 11:16:07 2025
+# Process ID: 4284
 # Current directory: C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1
 # Command line: vivado.exe -log axi_uart_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_uart_wrapper.tcl
 # Log file: C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/axi_uart_wrapper.vds
@@ -27,39 +27,39 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 1852
+INFO: [Synth 8-7075] Helper process launched with PID 17108
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1374.094 ; gain = 440.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1368.328 ; gain = 439.539
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'axi_uart_wrapper' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/hdl/axi_uart_wrapper.v:13]
 INFO: [Synth 8-6157] synthesizing module 'axi_uart' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:13]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_axi_slve_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_axi_slve_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_axi_slve_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_axi_slve_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_my_uart_tx_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_my_uart_tx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_my_uart_tx_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_my_uart_tx_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_processing_system7_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_processing_system7_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_processing_system7_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_axi_slve_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_axi_slve_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_axi_slve_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_axi_slve_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_my_uart_tx_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_my_uart_tx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_my_uart_tx_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_my_uart_tx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_processing_system7_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_processing_system7_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_processing_system7_0_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'axi_uart_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:187]
 WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'axi_uart_processing_system7_0_0' is unconnected for instance 'processing_system7_0' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:187]
 WARNING: [Synth 8-7023] instance 'processing_system7_0' of module 'axi_uart_processing_system7_0_0' has 65 connections declared, but only 63 given [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:187]
 INFO: [Synth 8-6157] synthesizing module 'axi_uart_ps7_0_axi_periph_0' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:352]
 INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_Y07TKI' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:667]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_auto_pc_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_auto_pc_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_auto_pc_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_auto_pc_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_auto_pc_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_auto_pc_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_Y07TKI' (0#1) [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:667]
 INFO: [Synth 8-6155] done synthesizing module 'axi_uart_ps7_0_axi_periph_0' (0#1) [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:352]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_rst_ps7_0_100M_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_rst_ps7_0_100M_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_rst_ps7_0_100M_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_rst_ps7_0_100M_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_rst_ps7_0_100M_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_rst_ps7_0_100M_0_stub.v:6]
 WARNING: [Synth 8-7071] port 'mb_reset' of module 'axi_uart_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:315]
 WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'axi_uart_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:315]
 WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'axi_uart_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:315]
 WARNING: [Synth 8-7071] port 'interconnect_aresetn' of module 'axi_uart_rst_ps7_0_100M_0' is unconnected for instance 'rst_ps7_0_100M' [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:315]
 WARNING: [Synth 8-7023] instance 'rst_ps7_0_100M' of module 'axi_uart_rst_ps7_0_100M_0' has 10 connections declared, but only 6 given [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:315]
 WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:322]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_system_ila_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_system_ila_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_system_ila_0_0_stub.v:6]
-INFO: [Synth 8-6157] synthesizing module 'axi_uart_uart_rx_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_uart_rx_0_0_stub.v:6]
-INFO: [Synth 8-6155] done synthesizing module 'axi_uart_uart_rx_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-23504-COMSYS01/realtime/axi_uart_uart_rx_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_system_ila_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_system_ila_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'axi_uart_uart_rx_0_0' [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_uart_rx_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'axi_uart_uart_rx_0_0' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/.Xil/Vivado-4284-COMSYS01/realtime/axi_uart_uart_rx_0_0_stub.v:6]
 INFO: [Synth 8-6155] done synthesizing module 'axi_uart' (0#1) [c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/synth/axi_uart.v:13]
 INFO: [Synth 8-6155] done synthesizing module 'axi_uart_wrapper' (0#1) [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/hdl/axi_uart_wrapper.v:13]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_Y07TKI is either unconnected or has no load
@@ -67,18 +67,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_Y07TKI is eith
 WARNING: [Synth 8-7129] Port ACLK in module axi_uart_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module axi_uart_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.773 ; gain = 553.141
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1480.785 ; gain = 551.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.773 ; gain = 553.141
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1480.785 ; gain = 551.996
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 1486.773 ; gain = 553.141
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1480.785 ; gain = 551.996
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1486.773 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1480.785 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -105,22 +105,22 @@ Parsing XDC File [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_fin
 Finished Parsing XDC File [C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1497.250 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1504.520 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1497.250 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1504.520 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z007sclg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -395,10 +395,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for axi_uart_i/ps7_0_axi_periph. (con
 Applied set_property KEEP_HIERARCHY = SOFT for axi_uart_i/rst_ps7_0_100M. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for axi_uart_i/system_ila_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:09 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -425,25 +425,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module axi_uart_ps7_0_axi_periph_0 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module axi_uart_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module axi_uart_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -461,37 +461,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -525,16 +525,16 @@ Report Cell Usage:
 |9     |OBUF                          |     1|
 +------+------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:16 . Memory (MB): peak = 1497.250 ; gain = 553.141
-Synthesis Optimization Complete : Time (s): cpu = 00:00:01 ; elapsed = 00:00:17 . Memory (MB): peak = 1497.250 ; gain = 563.617
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1504.520 ; gain = 551.996
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1504.520 ; gain = 575.730
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1506.125 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1508.914 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1510.750 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1512.605 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -542,8 +542,8 @@ Synth Design complete | Checksum: 8892617f
 INFO: [Common 17-83] Releasing license: Synthesis
 44 Infos, 18 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:01 ; elapsed = 00:00:20 . Memory (MB): peak = 1510.750 ; gain = 963.590
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1510.750 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:19 . Memory (MB): peak = 1512.605 ; gain = 971.629
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1512.605 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/synth_1/axi_uart_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file axi_uart_wrapper_utilization_synth.rpt -pb axi_uart_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 13 13:37:02 2025...
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 17 11:16:34 2025...

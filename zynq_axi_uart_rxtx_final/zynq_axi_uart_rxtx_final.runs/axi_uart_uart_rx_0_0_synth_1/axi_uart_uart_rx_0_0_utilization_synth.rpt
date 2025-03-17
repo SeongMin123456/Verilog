@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-| Date         : Thu Jan  9 16:52:19 2025
+| Date         : Mon Feb 17 11:16:06 2025
 | Host         : COMSYS01 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file axi_uart_uart_rx_0_0_utilization_synth.rpt -pb axi_uart_uart_rx_0_0_utilization_synth.pb
 | Design       : axi_uart_uart_rx_0_0
@@ -150,12 +150,12 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | FDRE     |   35 |        Flop & Latch |
 | LUT6     |   17 |                 LUT |
-| LUT4     |   13 |                 LUT |
+| LUT4     |   14 |                 LUT |
 | LUT2     |   13 |                 LUT |
 | LUT5     |    9 |                 LUT |
 | FDCE     |    8 |        Flop & Latch |
 | LUT3     |    7 |                 LUT |
-| LUT1     |    5 |                 LUT |
+| LUT1     |    4 |                 LUT |
 +----------+------+---------------------+
 
 

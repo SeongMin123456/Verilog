@@ -211,12 +211,6 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
-    <FileSet Name="axi_uart_uart_rx_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_uart_uart_rx_0_0" RelGenDir="$PGENDIR/axi_uart_uart_rx_0_0">
-      <Config>
-        <Option Name="TopModule" Val="axi_uart_uart_rx_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="axi_uart_my_uart_tx_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_uart_my_uart_tx_0_0" RelGenDir="$PGENDIR/axi_uart_my_uart_tx_0_0">
       <Config>
         <Option Name="TopModule" Val="axi_uart_my_uart_tx_0_0"/>
@@ -226,6 +220,12 @@
     <FileSet Name="axi_uart_axi_slve_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_uart_axi_slve_0_0" RelGenDir="$PGENDIR/axi_uart_axi_slve_0_0">
       <Config>
         <Option Name="TopModule" Val="axi_uart_axi_slve_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="axi_uart_uart_rx_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/axi_uart_uart_rx_0_0" RelGenDir="$PGENDIR/axi_uart_uart_rx_0_0">
+      <Config>
+        <Option Name="TopModule" Val="axi_uart_uart_rx_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -279,16 +279,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="axi_uart_uart_rx_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_uart_uart_rx_0_0" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_uart_rx_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_uart_uart_rx_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_synth_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="axi_uart_my_uart_tx_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_uart_my_uart_tx_0_0" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_my_uart_tx_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_uart_my_uart_tx_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_my_uart_tx_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_my_uart_tx_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
@@ -302,6 +292,18 @@
     <Run Id="axi_uart_axi_slve_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_uart_axi_slve_0_0" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_axi_slve_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_uart_axi_slve_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_axi_slve_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_axi_slve_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="axi_uart_uart_rx_0_0_synth_1" Type="Ft3:Synth" SrcSet="axi_uart_uart_rx_0_0" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_uart_rx_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/axi_uart_uart_rx_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_synth_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -361,23 +363,6 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="axi_uart_uart_rx_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_uart_rx_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_uart_uart_rx_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_impl_1">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="axi_uart_my_uart_tx_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_my_uart_tx_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_uart_my_uart_tx_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_my_uart_tx_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_my_uart_tx_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
@@ -398,6 +383,25 @@
     <Run Id="axi_uart_axi_slve_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_axi_slve_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_uart_axi_slve_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_axi_slve_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_axi_slve_0_0_impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2023"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="axi_uart_uart_rx_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7z007sclg400-1" ConstrsSet="axi_uart_uart_rx_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="axi_uart_uart_rx_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/axi_uart_uart_rx_0_0_impl_1">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2023">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

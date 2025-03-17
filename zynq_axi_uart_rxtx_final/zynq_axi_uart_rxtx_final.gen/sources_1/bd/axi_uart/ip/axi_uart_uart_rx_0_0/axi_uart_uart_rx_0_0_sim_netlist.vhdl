@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Thu Jan  9 16:52:19 2025
+-- Date        : Mon Feb 17 11:16:06 2025
 -- Host        : COMSYS01 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               c:/verilog_lab/zynq_axi_uart_rxtx/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_sim_netlist.vhdl
+--               c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_sim_netlist.vhdl
 -- Design      : axi_uart_uart_rx_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -45,6 +45,7 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   signal \FSM_sequential_curr_state[0]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_curr_state[1]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_sequential_curr_state[1]_i_2_n_0\ : STD_LOGIC;
+  signal \FSM_sequential_curr_state[1]_i_3_n_0\ : STD_LOGIC;
   signal \FSM_sequential_curr_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \^rx_ready\ : STD_LOGIC;
   attribute MARK_DEBUG : boolean;
@@ -82,8 +83,8 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   signal \data_cnt_reg_n_0_[1]\ : STD_LOGIC;
   signal \data_cnt_reg_n_0_[2]\ : STD_LOGIC;
   signal \data_cnt_reg_n_0_[3]\ : STD_LOGIC;
+  signal p_0_in : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \p_0_in__0\ : STD_LOGIC_VECTOR ( 3 downto 0 );
-  signal \p_0_in__1\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal rx_data0_in : STD_LOGIC_VECTOR ( 7 to 7 );
   signal \rx_data[0]_i_1_n_0\ : STD_LOGIC;
   signal \rx_data[1]_i_1_n_0\ : STD_LOGIC;
@@ -108,8 +109,6 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   signal \rx_data_reg_n_0_[5]\ : STD_LOGIC;
   signal \rx_data_reg_n_0_[6]\ : STD_LOGIC;
   signal \rx_data_reg_n_0_[7]\ : STD_LOGIC;
-  signal rx_done : STD_LOGIC;
-  attribute MARK_DEBUG of rx_done : signal is std.standard.true;
   signal sampling : STD_LOGIC;
   signal sampling_reg : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \send_data[7]_i_1_n_0\ : STD_LOGIC;
@@ -125,15 +124,16 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   signal start_bit_reg_n_0 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_sequential_curr_state[0]_i_1\ : label is "soft_lutpair0";
+  attribute SOFT_HLUTNM of \FSM_sequential_curr_state[1]_i_3\ : label is "soft_lutpair9";
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_sequential_curr_state_reg[0]\ : label is "shift:11,start:01,stop:10,standby:00";
   attribute FSM_ENCODED_STATES of \FSM_sequential_curr_state_reg[1]\ : label is "shift:11,start:01,stop:10,standby:00";
-  attribute SOFT_HLUTNM of \baud_cnt[1]_i_1\ : label is "soft_lutpair11";
-  attribute SOFT_HLUTNM of \baud_cnt[2]_i_1\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \baud_cnt[1]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \baud_cnt[2]_i_1\ : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \baud_cnt[3]_i_2\ : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of \baud_cnt[3]_i_3\ : label is "soft_lutpair10";
-  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair13";
-  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \baud_cnt[3]_i_3\ : label is "soft_lutpair11";
+  attribute SOFT_HLUTNM of \cnt[0]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \cnt[1]_i_1\ : label is "soft_lutpair14";
   attribute SOFT_HLUTNM of \cnt[2]_i_1\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \cnt[3]_i_1\ : label is "soft_lutpair2";
   attribute SOFT_HLUTNM of \cnt[4]_i_1\ : label is "soft_lutpair2";
@@ -141,7 +141,7 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   attribute SOFT_HLUTNM of \cnt[7]_i_1\ : label is "soft_lutpair1";
   attribute SOFT_HLUTNM of \cnt[8]_i_2\ : label is "soft_lutpair6";
   attribute SOFT_HLUTNM of \data_cnt[0]_i_1\ : label is "soft_lutpair15";
-  attribute SOFT_HLUTNM of \data_cnt[1]_i_1\ : label is "soft_lutpair12";
+  attribute SOFT_HLUTNM of \data_cnt[1]_i_1\ : label is "soft_lutpair13";
   attribute SOFT_HLUTNM of \data_cnt[2]_i_1\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \data_cnt[3]_i_2\ : label is "soft_lutpair4";
   attribute SOFT_HLUTNM of \data_cnt[3]_i_4\ : label is "soft_lutpair3";
@@ -152,14 +152,13 @@ architecture STRUCTURE of axi_uart_uart_rx_0_0_uart_rx is
   attribute SOFT_HLUTNM of \rx_data[7]_i_2\ : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of \rx_data[7]_i_3\ : label is "soft_lutpair0";
   attribute SOFT_HLUTNM of \rx_data[7]_i_4\ : label is "soft_lutpair8";
-  attribute SOFT_HLUTNM of \rx_data[7]_i_5\ : label is "soft_lutpair12";
-  attribute SOFT_HLUTNM of \sampling[0]_i_1\ : label is "soft_lutpair14";
-  attribute SOFT_HLUTNM of \sampling[1]_i_1\ : label is "soft_lutpair14";
+  attribute SOFT_HLUTNM of \rx_data[7]_i_5\ : label is "soft_lutpair13";
+  attribute SOFT_HLUTNM of \sampling[1]_i_1\ : label is "soft_lutpair11";
   attribute SOFT_HLUTNM of \sampling[2]_i_1\ : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of \sampling[3]_i_3\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of send_done_i_1 : label is "soft_lutpair5";
   attribute SOFT_HLUTNM of send_done_i_2 : label is "soft_lutpair7";
-  attribute SOFT_HLUTNM of shift_done_i_2 : label is "soft_lutpair9";
+  attribute SOFT_HLUTNM of shift_done_i_2 : label is "soft_lutpair10";
   attribute SOFT_HLUTNM of shift_done_i_3 : label is "soft_lutpair3";
   attribute mark_debug_string : string;
   attribute mark_debug_string of RX_READY : signal is "true";
@@ -168,40 +167,51 @@ begin
   RX_READY <= \^rx_ready\;
 \FSM_sequential_curr_state[0]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"C1F10000"
+      INIT => X"C1CD0000"
     )
         port map (
       I0 => rxd,
-      I1 => curr_state(1),
-      I2 => \FSM_sequential_curr_state_reg_n_0_[0]\,
+      I1 => \FSM_sequential_curr_state_reg_n_0_[0]\,
+      I2 => curr_state(1),
       I3 => send_done_reg_n_0,
       I4 => RST,
       O => \FSM_sequential_curr_state[0]_i_1_n_0\
     );
 \FSM_sequential_curr_state[1]_i_1\: unisim.vcomponents.LUT5
     generic map(
-      INIT => X"F4040000"
+      INIT => X"BA000000"
     )
         port map (
-      I0 => \^rx_ready\,
-      I1 => curr_state(1),
-      I2 => \FSM_sequential_curr_state_reg_n_0_[0]\,
+      I0 => \FSM_sequential_curr_state_reg_n_0_[0]\,
+      I1 => \^rx_ready\,
+      I2 => curr_state(1),
       I3 => \FSM_sequential_curr_state[1]_i_2_n_0\,
       I4 => RST,
       O => \FSM_sequential_curr_state[1]_i_1_n_0\
     );
 \FSM_sequential_curr_state[1]_i_2\: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"00FFFFFF00FF0101"
+      INIT => X"0F04FFFFFFF4FFFF"
+    )
+        port map (
+      I0 => start_bit_reg_n_0,
+      I1 => \FSM_sequential_curr_state[1]_i_3_n_0\,
+      I2 => curr_state(1),
+      I3 => send_done_reg_n_0,
+      I4 => \FSM_sequential_curr_state_reg_n_0_[0]\,
+      I5 => shift_done_reg_n_0,
+      O => \FSM_sequential_curr_state[1]_i_2_n_0\
+    );
+\FSM_sequential_curr_state[1]_i_3\: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"4000"
     )
         port map (
       I0 => sampling_reg(3),
-      I1 => start_bit_reg_n_0,
-      I2 => \baud_cnt[3]_i_3_n_0\,
-      I3 => shift_done_reg_n_0,
-      I4 => curr_state(1),
-      I5 => send_done_reg_n_0,
-      O => \FSM_sequential_curr_state[1]_i_2_n_0\
+      I1 => sampling_reg(2),
+      I2 => sampling_reg(0),
+      I3 => sampling_reg(1),
+      O => \FSM_sequential_curr_state[1]_i_3_n_0\
     );
 \FSM_sequential_curr_state_reg[0]\: unisim.vcomponents.FDRE
      port map (
@@ -219,13 +229,24 @@ begin
       Q => curr_state(1),
       R => '0'
     );
+RX_READY_inferred_i_1: unisim.vcomponents.LUT4
+    generic map(
+      INIT => X"0040"
+    )
+        port map (
+      I0 => baud_cnt_reg(2),
+      I1 => baud_cnt_reg(3),
+      I2 => baud_cnt_reg(1),
+      I3 => baud_cnt_reg(0),
+      O => \^rx_ready\
+    );
 \baud_cnt[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => baud_cnt_reg(0),
-      O => \p_0_in__1\(0)
+      O => \p_0_in__0\(0)
     );
 \baud_cnt[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -234,7 +255,7 @@ begin
         port map (
       I0 => baud_cnt_reg(0),
       I1 => baud_cnt_reg(1),
-      O => \p_0_in__1\(1)
+      O => \p_0_in__0\(1)
     );
 \baud_cnt[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -244,7 +265,7 @@ begin
       I0 => baud_cnt_reg(2),
       I1 => baud_cnt_reg(1),
       I2 => baud_cnt_reg(0),
-      O => \p_0_in__1\(2)
+      O => \p_0_in__0\(2)
     );
 \baud_cnt[3]_i_1\: unisim.vcomponents.LUT6
     generic map(
@@ -268,7 +289,7 @@ begin
       I1 => baud_cnt_reg(0),
       I2 => baud_cnt_reg(1),
       I3 => baud_cnt_reg(2),
-      O => \p_0_in__1\(3)
+      O => \p_0_in__0\(3)
     );
 \baud_cnt[3]_i_3\: unisim.vcomponents.LUT3
     generic map(
@@ -287,7 +308,7 @@ begin
         port map (
       C => CLK,
       CE => baud_cnt,
-      D => \p_0_in__1\(0),
+      D => \p_0_in__0\(0),
       Q => baud_cnt_reg(0),
       R => cnt
     );
@@ -298,7 +319,7 @@ begin
         port map (
       C => CLK,
       CE => baud_cnt,
-      D => \p_0_in__1\(1),
+      D => \p_0_in__0\(1),
       Q => baud_cnt_reg(1),
       R => cnt
     );
@@ -309,7 +330,7 @@ begin
         port map (
       C => CLK,
       CE => baud_cnt,
-      D => \p_0_in__1\(2),
+      D => \p_0_in__0\(2),
       Q => baud_cnt_reg(2),
       R => cnt
     );
@@ -320,7 +341,7 @@ begin
         port map (
       C => CLK,
       CE => baud_cnt,
-      D => \p_0_in__1\(3),
+      D => \p_0_in__0\(3),
       Q => baud_cnt_reg(3),
       R => cnt
     );
@@ -1000,32 +1021,13 @@ begin
       Q => \rx_data_reg_n_0_[7]\,
       R => '0'
     );
-rx_done_inferred_i_1: unisim.vcomponents.LUT4
-    generic map(
-      INIT => X"0040"
-    )
-        port map (
-      I0 => baud_cnt_reg(0),
-      I1 => baud_cnt_reg(1),
-      I2 => baud_cnt_reg(3),
-      I3 => baud_cnt_reg(2),
-      O => rx_done
-    );
-rx_done_inst: unisim.vcomponents.LUT1
-    generic map(
-      INIT => X"2"
-    )
-        port map (
-      I0 => rx_done,
-      O => \^rx_ready\
-    );
 \sampling[0]_i_1\: unisim.vcomponents.LUT1
     generic map(
       INIT => X"1"
     )
         port map (
       I0 => sampling_reg(0),
-      O => \p_0_in__0\(0)
+      O => p_0_in(0)
     );
 \sampling[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -1034,7 +1036,7 @@ rx_done_inst: unisim.vcomponents.LUT1
         port map (
       I0 => sampling_reg(0),
       I1 => sampling_reg(1),
-      O => \p_0_in__0\(1)
+      O => p_0_in(1)
     );
 \sampling[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
@@ -1044,7 +1046,7 @@ rx_done_inst: unisim.vcomponents.LUT1
       I0 => sampling_reg(2),
       I1 => sampling_reg(0),
       I2 => sampling_reg(1),
-      O => \p_0_in__0\(2)
+      O => p_0_in(2)
     );
 \sampling[3]_i_1\: unisim.vcomponents.LUT2
     generic map(
@@ -1075,7 +1077,7 @@ rx_done_inst: unisim.vcomponents.LUT1
       I1 => sampling_reg(0),
       I2 => sampling_reg(2),
       I3 => sampling_reg(3),
-      O => \p_0_in__0\(3)
+      O => p_0_in(3)
     );
 \sampling_reg[0]\: unisim.vcomponents.FDRE
     generic map(
@@ -1084,7 +1086,7 @@ rx_done_inst: unisim.vcomponents.LUT1
         port map (
       C => CLK,
       CE => sampling,
-      D => \p_0_in__0\(0),
+      D => p_0_in(0),
       Q => sampling_reg(0),
       R => cnt
     );
@@ -1095,7 +1097,7 @@ rx_done_inst: unisim.vcomponents.LUT1
         port map (
       C => CLK,
       CE => sampling,
-      D => \p_0_in__0\(1),
+      D => p_0_in(1),
       Q => sampling_reg(1),
       R => cnt
     );
@@ -1106,7 +1108,7 @@ rx_done_inst: unisim.vcomponents.LUT1
         port map (
       C => CLK,
       CE => sampling,
-      D => \p_0_in__0\(2),
+      D => p_0_in(2),
       Q => sampling_reg(2),
       R => cnt
     );
@@ -1117,7 +1119,7 @@ rx_done_inst: unisim.vcomponents.LUT1
         port map (
       C => CLK,
       CE => sampling,
-      D => \p_0_in__0\(3),
+      D => p_0_in(3),
       Q => sampling_reg(3),
       R => cnt
     );
@@ -1210,10 +1212,10 @@ send_done_i_2: unisim.vcomponents.LUT4
       INIT => X"0040"
     )
         port map (
-      I0 => baud_cnt_reg(1),
-      I1 => baud_cnt_reg(0),
-      I2 => baud_cnt_reg(3),
-      I3 => baud_cnt_reg(2),
+      I0 => baud_cnt_reg(2),
+      I1 => baud_cnt_reg(3),
+      I2 => baud_cnt_reg(0),
+      I3 => baud_cnt_reg(1),
       O => send_done_i_2_n_0
     );
 send_done_reg: unisim.vcomponents.FDRE
@@ -1290,10 +1292,10 @@ start_bit_i_2: unisim.vcomponents.LUT6
     )
         port map (
       I0 => rxd,
-      I1 => baud_cnt_reg(1),
-      I2 => baud_cnt_reg(0),
-      I3 => baud_cnt_reg(3),
-      I4 => baud_cnt_reg(2),
+      I1 => baud_cnt_reg(2),
+      I2 => baud_cnt_reg(3),
+      I3 => baud_cnt_reg(0),
+      I4 => baud_cnt_reg(1),
       I5 => \FSM_sequential_curr_state_reg_n_0_[0]\,
       O => start_bit_i_2_n_0
     );

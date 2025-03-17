@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Digital_test5_MyUART.srcs/sources_1/new/HEX2ASCII.v" \
+"../../../../Digital_test5_MyUART.srcs/sim_1/new/HEX2ASCII_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

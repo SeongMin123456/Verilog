@@ -1,0 +1,143 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/modelsim/uart_pro
+vrx232_pd
+!s110 1740728979
+!i10b 1
+!s100 olJeg=P5Ne`Ea_Km@gjfh0
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IaQSdMC=1nGTUUB6BociUZ3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1740711310
+8rx232_pd.v
+Frx232_pd.v
+!i122 6
+L0 1 140
+Z3 OV;L;2020.1;71
+r1
+!s85 0
+31
+!s108 1740728979.000000
+!s107 rx232_pd.v|
+!s90 -reportprogress|300|rx232_pd.v|
+!i113 1
+Z4 tCvgOpt 0
+vrxck_gen
+!s110 1740728982
+!i10b 1
+!s100 S>6VGa9@BZk@:HC3DHTR61
+R1
+I4iO_m]OzjF2=E[UEODX<?2
+R2
+R0
+w1740634858
+8rxck_gen.v
+Frxck_gen.v
+!i122 7
+L0 1 118
+R3
+r1
+!s85 0
+31
+!s108 1740728982.000000
+!s107 rxck_gen.v|
+!s90 -reportprogress|300|rxck_gen.v|
+!i113 1
+R4
+vtb_uart
+!s110 1740728988
+!i10b 1
+!s100 OYn<ON@4jUdRD=GdfTQ^61
+R1
+IYKkL1iVVSoVGK@<<e_1Va1
+R2
+R0
+w1740629104
+8tb_uart.v
+Ftb_uart.v
+!i122 8
+L0 1 37
+R3
+r1
+!s85 0
+31
+!s108 1740728988.000000
+!s107 tb_uart.v|
+!s90 -reportprogress|300|tb_uart.v|
+!i113 1
+R4
+vtx232
+!s110 1740728995
+!i10b 1
+!s100 64RLK=Joh_HQS8f@4jd753
+R1
+I0@5:3TzU3ST[Zea8FBZEb1
+R2
+R0
+w1740626408
+8tx232.v
+Ftx232.v
+!i122 9
+L0 1 98
+R3
+r1
+!s85 0
+31
+!s108 1740728995.000000
+!s107 tx232.v|
+!s90 -reportprogress|300|tx232.v|
+!i113 1
+R4
+vuart_rx
+!s110 1740729002
+!i10b 1
+!s100 ol0oXNJl5ZZG<fBTXERhW1
+R1
+IKbzNckZA2f<e8bIga^zm41
+R2
+R0
+w1740629484
+8uart_rx.v
+Fuart_rx.v
+!i122 10
+L0 1 129
+R3
+r1
+!s85 0
+31
+!s108 1740729002.000000
+!s107 uart_rx.v|
+!s90 -reportprogress|300|uart_rx.v|
+!i113 1
+R4
+vuart_tx
+!s110 1740729005
+!i10b 1
+!s100 7USE;[A4_U>:ifWB@h:lK1
+R1
+IXEzPBD91n=WhnU96Xo`MJ1
+R2
+R0
+w1740626436
+8uart_tx.v
+Fuart_tx.v
+!i122 11
+L0 1 122
+R3
+r1
+!s85 0
+31
+!s108 1740729005.000000
+!s107 uart_tx.v|
+!s90 -reportprogress|300|uart_tx.v|
+!i113 1
+R4

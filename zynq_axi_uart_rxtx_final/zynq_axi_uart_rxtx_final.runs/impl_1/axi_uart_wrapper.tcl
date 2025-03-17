@@ -123,9 +123,7 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param tcl.collectionResultDisplayLimit 0
   set_param chipscope.maxJobs 6
-  set_param xicom.use_bs_reader 1
   set_param runs.launchOptions { -jobs 12  }
   reset_param project.defaultXPMLibraries 
   open_checkpoint C:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.runs/impl_1/axi_uart_wrapper.dcp

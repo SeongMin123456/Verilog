@@ -2,10 +2,10 @@
 -- Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
--- Date        : Thu Jan  9 16:52:19 2025
+-- Date        : Mon Feb 17 11:16:06 2025
 -- Host        : COMSYS01 running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               c:/verilog_lab/zynq_axi_uart_rxtx/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_stub.vhdl
+--               c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_stub.vhdl
 -- Design      : axi_uart_uart_rx_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z007sclg400-1

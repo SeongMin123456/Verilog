@@ -2,10 +2,10 @@
 // Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
-// Date        : Thu Jan  9 16:52:19 2025
+// Date        : Mon Feb 17 11:16:06 2025
 // Host        : COMSYS01 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               c:/verilog_lab/zynq_axi_uart_rxtx/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_sim_netlist.v
+//               c:/verilog_lab/zynq_axi_uart_rxtx_final/zynq_axi_uart_rxtx_final.gen/sources_1/bd/axi_uart/ip/axi_uart_uart_rx_0_0/axi_uart_uart_rx_0_0_sim_netlist.v
 // Design      : axi_uart_uart_rx_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -69,6 +69,7 @@ module axi_uart_uart_rx_0_0_uart_rx
   wire \FSM_sequential_curr_state[0]_i_1_n_0 ;
   wire \FSM_sequential_curr_state[1]_i_1_n_0 ;
   wire \FSM_sequential_curr_state[1]_i_2_n_0 ;
+  wire \FSM_sequential_curr_state[1]_i_3_n_0 ;
   wire \FSM_sequential_curr_state_reg_n_0_[0] ;
   wire RST;
   (* MARK_DEBUG *) wire RX_READY;
@@ -105,8 +106,8 @@ module axi_uart_uart_rx_0_0_uart_rx
   wire \data_cnt_reg_n_0_[1] ;
   wire \data_cnt_reg_n_0_[2] ;
   wire \data_cnt_reg_n_0_[3] ;
+  wire [3:0]p_0_in;
   wire [3:0]p_0_in__0;
-  wire [3:0]p_0_in__1;
   wire [7:7]rx_data0_in;
   wire \rx_data[0]_i_1_n_0 ;
   wire \rx_data[1]_i_1_n_0 ;
@@ -131,7 +132,6 @@ module axi_uart_uart_rx_0_0_uart_rx
   wire \rx_data_reg_n_0_[5] ;
   wire \rx_data_reg_n_0_[6] ;
   wire \rx_data_reg_n_0_[7] ;
-  (* MARK_DEBUG *) wire rx_done;
   wire rxd;
   wire sampling;
   wire [3:0]sampling_reg;
@@ -149,33 +149,42 @@ module axi_uart_uart_rx_0_0_uart_rx
 
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT5 #(
-    .INIT(32'hC1F10000)) 
+    .INIT(32'hC1CD0000)) 
     \FSM_sequential_curr_state[0]_i_1 
        (.I0(rxd),
-        .I1(curr_state),
-        .I2(\FSM_sequential_curr_state_reg_n_0_[0] ),
+        .I1(\FSM_sequential_curr_state_reg_n_0_[0] ),
+        .I2(curr_state),
         .I3(send_done_reg_n_0),
         .I4(RST),
         .O(\FSM_sequential_curr_state[0]_i_1_n_0 ));
   LUT5 #(
-    .INIT(32'hF4040000)) 
+    .INIT(32'hBA000000)) 
     \FSM_sequential_curr_state[1]_i_1 
-       (.I0(RX_READY),
-        .I1(curr_state),
-        .I2(\FSM_sequential_curr_state_reg_n_0_[0] ),
+       (.I0(\FSM_sequential_curr_state_reg_n_0_[0] ),
+        .I1(RX_READY),
+        .I2(curr_state),
         .I3(\FSM_sequential_curr_state[1]_i_2_n_0 ),
         .I4(RST),
         .O(\FSM_sequential_curr_state[1]_i_1_n_0 ));
   LUT6 #(
-    .INIT(64'h00FFFFFF00FF0101)) 
+    .INIT(64'h0F04FFFFFFF4FFFF)) 
     \FSM_sequential_curr_state[1]_i_2 
-       (.I0(sampling_reg[3]),
-        .I1(start_bit_reg_n_0),
-        .I2(\baud_cnt[3]_i_3_n_0 ),
-        .I3(shift_done_reg_n_0),
-        .I4(curr_state),
-        .I5(send_done_reg_n_0),
+       (.I0(start_bit_reg_n_0),
+        .I1(\FSM_sequential_curr_state[1]_i_3_n_0 ),
+        .I2(curr_state),
+        .I3(send_done_reg_n_0),
+        .I4(\FSM_sequential_curr_state_reg_n_0_[0] ),
+        .I5(shift_done_reg_n_0),
         .O(\FSM_sequential_curr_state[1]_i_2_n_0 ));
+  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  LUT4 #(
+    .INIT(16'h4000)) 
+    \FSM_sequential_curr_state[1]_i_3 
+       (.I0(sampling_reg[3]),
+        .I1(sampling_reg[2]),
+        .I2(sampling_reg[0]),
+        .I3(sampling_reg[1]),
+        .O(\FSM_sequential_curr_state[1]_i_3_n_0 ));
   (* FSM_ENCODED_STATES = "shift:11,start:01,stop:10,standby:00" *) 
   FDRE \FSM_sequential_curr_state_reg[0] 
        (.C(CLK),
@@ -190,26 +199,34 @@ module axi_uart_uart_rx_0_0_uart_rx
         .D(\FSM_sequential_curr_state[1]_i_1_n_0 ),
         .Q(curr_state),
         .R(1'b0));
+  LUT4 #(
+    .INIT(16'h0040)) 
+    RX_READY_inferred_i_1
+       (.I0(baud_cnt_reg[2]),
+        .I1(baud_cnt_reg[3]),
+        .I2(baud_cnt_reg[1]),
+        .I3(baud_cnt_reg[0]),
+        .O(RX_READY));
   LUT1 #(
     .INIT(2'h1)) 
     \baud_cnt[0]_i_1 
        (.I0(baud_cnt_reg[0]),
-        .O(p_0_in__1[0]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+        .O(p_0_in__0[0]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \baud_cnt[1]_i_1 
        (.I0(baud_cnt_reg[0]),
         .I1(baud_cnt_reg[1]),
-        .O(p_0_in__1[1]));
-  (* SOFT_HLUTNM = "soft_lutpair11" *) 
+        .O(p_0_in__0[1]));
+  (* SOFT_HLUTNM = "soft_lutpair12" *) 
   LUT3 #(
     .INIT(8'h6A)) 
     \baud_cnt[2]_i_1 
        (.I0(baud_cnt_reg[2]),
         .I1(baud_cnt_reg[1]),
         .I2(baud_cnt_reg[0]),
-        .O(p_0_in__1[2]));
+        .O(p_0_in__0[2]));
   LUT6 #(
     .INIT(64'h0004000000000000)) 
     \baud_cnt[3]_i_1 
@@ -228,8 +245,8 @@ module axi_uart_uart_rx_0_0_uart_rx
         .I1(baud_cnt_reg[0]),
         .I2(baud_cnt_reg[1]),
         .I3(baud_cnt_reg[2]),
-        .O(p_0_in__1[3]));
-  (* SOFT_HLUTNM = "soft_lutpair10" *) 
+        .O(p_0_in__0[3]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT3 #(
     .INIT(8'h7F)) 
     \baud_cnt[3]_i_3 
@@ -242,7 +259,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \baud_cnt_reg[0] 
        (.C(CLK),
         .CE(baud_cnt),
-        .D(p_0_in__1[0]),
+        .D(p_0_in__0[0]),
         .Q(baud_cnt_reg[0]),
         .R(cnt));
   FDRE #(
@@ -250,7 +267,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \baud_cnt_reg[1] 
        (.C(CLK),
         .CE(baud_cnt),
-        .D(p_0_in__1[1]),
+        .D(p_0_in__0[1]),
         .Q(baud_cnt_reg[1]),
         .R(cnt));
   FDRE #(
@@ -258,7 +275,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \baud_cnt_reg[2] 
        (.C(CLK),
         .CE(baud_cnt),
-        .D(p_0_in__1[2]),
+        .D(p_0_in__0[2]),
         .Q(baud_cnt_reg[2]),
         .R(cnt));
   FDRE #(
@@ -266,16 +283,16 @@ module axi_uart_uart_rx_0_0_uart_rx
     \baud_cnt_reg[3] 
        (.C(CLK),
         .CE(baud_cnt),
-        .D(p_0_in__1[3]),
+        .D(p_0_in__0[3]),
         .Q(baud_cnt_reg[3]),
         .R(cnt));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \cnt[0]_i_1 
        (.I0(cnt_reg[0]),
         .O(\cnt[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair13" *) 
+  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \cnt[1]_i_1 
@@ -489,7 +506,7 @@ module axi_uart_uart_rx_0_0_uart_rx
        (.I0(curr_state),
         .I1(\data_cnt_reg_n_0_[0] ),
         .O(\data_cnt[0]_i_1_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT3 #(
     .INIT(8'h60)) 
     \data_cnt[1]_i_1 
@@ -712,7 +729,7 @@ module axi_uart_uart_rx_0_0_uart_rx
        (.I0(\data_cnt_reg_n_0_[3] ),
         .I1(\data_cnt_reg_n_0_[2] ),
         .O(\rx_data[7]_i_4_n_0 ));
-  (* SOFT_HLUTNM = "soft_lutpair12" *) 
+  (* SOFT_HLUTNM = "soft_lutpair13" *) 
   LUT2 #(
     .INIT(4'h8)) 
     \rx_data[7]_i_5 
@@ -783,32 +800,18 @@ module axi_uart_uart_rx_0_0_uart_rx
         .D(\rx_data[7]_i_1_n_0 ),
         .Q(\rx_data_reg_n_0_[7] ),
         .R(1'b0));
-  LUT4 #(
-    .INIT(16'h0040)) 
-    rx_done_inferred_i_1
-       (.I0(baud_cnt_reg[0]),
-        .I1(baud_cnt_reg[1]),
-        .I2(baud_cnt_reg[3]),
-        .I3(baud_cnt_reg[2]),
-        .O(rx_done));
-  LUT1 #(
-    .INIT(2'h2)) 
-    rx_done_inst
-       (.I0(rx_done),
-        .O(RX_READY));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
   LUT1 #(
     .INIT(2'h1)) 
     \sampling[0]_i_1 
        (.I0(sampling_reg[0]),
-        .O(p_0_in__0[0]));
-  (* SOFT_HLUTNM = "soft_lutpair14" *) 
+        .O(p_0_in[0]));
+  (* SOFT_HLUTNM = "soft_lutpair11" *) 
   LUT2 #(
     .INIT(4'h6)) 
     \sampling[1]_i_1 
        (.I0(sampling_reg[0]),
         .I1(sampling_reg[1]),
-        .O(p_0_in__0[1]));
+        .O(p_0_in[1]));
   (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT3 #(
     .INIT(8'h6A)) 
@@ -816,7 +819,7 @@ module axi_uart_uart_rx_0_0_uart_rx
        (.I0(sampling_reg[2]),
         .I1(sampling_reg[0]),
         .I2(sampling_reg[1]),
-        .O(p_0_in__0[2]));
+        .O(p_0_in[2]));
   LUT2 #(
     .INIT(4'h1)) 
     \sampling[3]_i_1 
@@ -839,13 +842,13 @@ module axi_uart_uart_rx_0_0_uart_rx
         .I1(sampling_reg[0]),
         .I2(sampling_reg[2]),
         .I3(sampling_reg[3]),
-        .O(p_0_in__0[3]));
+        .O(p_0_in[3]));
   FDRE #(
     .INIT(1'b0)) 
     \sampling_reg[0] 
        (.C(CLK),
         .CE(sampling),
-        .D(p_0_in__0[0]),
+        .D(p_0_in[0]),
         .Q(sampling_reg[0]),
         .R(cnt));
   FDRE #(
@@ -853,7 +856,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \sampling_reg[1] 
        (.C(CLK),
         .CE(sampling),
-        .D(p_0_in__0[1]),
+        .D(p_0_in[1]),
         .Q(sampling_reg[1]),
         .R(cnt));
   FDRE #(
@@ -861,7 +864,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \sampling_reg[2] 
        (.C(CLK),
         .CE(sampling),
-        .D(p_0_in__0[2]),
+        .D(p_0_in[2]),
         .Q(sampling_reg[2]),
         .R(cnt));
   FDRE #(
@@ -869,7 +872,7 @@ module axi_uart_uart_rx_0_0_uart_rx
     \sampling_reg[3] 
        (.C(CLK),
         .CE(sampling),
-        .D(p_0_in__0[3]),
+        .D(p_0_in[3]),
         .Q(sampling_reg[3]),
         .R(cnt));
   LUT1 #(
@@ -939,10 +942,10 @@ module axi_uart_uart_rx_0_0_uart_rx
   LUT4 #(
     .INIT(16'h0040)) 
     send_done_i_2
-       (.I0(baud_cnt_reg[1]),
-        .I1(baud_cnt_reg[0]),
-        .I2(baud_cnt_reg[3]),
-        .I3(baud_cnt_reg[2]),
+       (.I0(baud_cnt_reg[2]),
+        .I1(baud_cnt_reg[3]),
+        .I2(baud_cnt_reg[0]),
+        .I3(baud_cnt_reg[1]),
         .O(send_done_i_2_n_0));
   FDRE #(
     .INIT(1'b0)) 
@@ -962,7 +965,7 @@ module axi_uart_uart_rx_0_0_uart_rx
         .I4(curr_state),
         .I5(\FSM_sequential_curr_state_reg_n_0_[0] ),
         .O(shift_done_i_1_n_0));
-  (* SOFT_HLUTNM = "soft_lutpair9" *) 
+  (* SOFT_HLUTNM = "soft_lutpair10" *) 
   LUT4 #(
     .INIT(16'hFFEF)) 
     shift_done_i_2
@@ -1000,10 +1003,10 @@ module axi_uart_uart_rx_0_0_uart_rx
     .INIT(64'h0000300355555555)) 
     start_bit_i_2
        (.I0(rxd),
-        .I1(baud_cnt_reg[1]),
-        .I2(baud_cnt_reg[0]),
-        .I3(baud_cnt_reg[3]),
-        .I4(baud_cnt_reg[2]),
+        .I1(baud_cnt_reg[2]),
+        .I2(baud_cnt_reg[3]),
+        .I3(baud_cnt_reg[0]),
+        .I4(baud_cnt_reg[1]),
         .I5(\FSM_sequential_curr_state_reg_n_0_[0] ),
         .O(start_bit_i_2_n_0));
   FDRE #(

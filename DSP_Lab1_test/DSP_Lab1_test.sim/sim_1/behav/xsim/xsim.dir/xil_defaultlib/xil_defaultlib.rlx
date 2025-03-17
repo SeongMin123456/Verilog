@@ -1,0 +1,8 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.sim/sim_1/behav/xsim/glbl.v,1697210495,verilog,,,,glbl,,,,,,,,
+C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.srcs/sources_1/imports/Lab1/sine_a.v,1572402138,verilog,,C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.srcs/sources_1/imports/Lab1/usin_rom.v,,sine_a,,,,,,,,
+C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.srcs/sources_1/imports/Lab1/sine_sum_unsigned.v,1618885290,verilog,,,,sine_sum_unsigned,,,,,,,,
+C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.srcs/sources_1/imports/Lab1/usin_rom.v,1572395748,verilog,,C:/verilog_lab/DSP_Lab1_test/DSP_Lab1_test.srcs/sources_1/imports/Lab1/sine_sum_unsigned.v,,usin_rom,,,,,,,,
